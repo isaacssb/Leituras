@@ -11,4 +11,4 @@ Imagine que está trabalhando em uma atualização de código legado, porém precisa 
 - Item Adaptado (???): Trata-se de uma interface já existente , da qual o nosso adapatador fará usp. Seria como a tomada da parede.
 - Cliente (index.php): São as classes que farão uso do adaptador. No exemplo do mundo real, o cliente seria o conector USB.
 - Alvo (???): Define a interface que o nosso cliente vai usar. Seria como o contrado que define que todos os conectores USB só duncionam com uma entrada USB (nada além disso).
-- Adaptador (???): É o adapatador de fato que implementa da interface de *Alvo*, porém, por trás, faz uso do item adaptado de forma totalmten transparente. As classes que usam esse adaptador só tem conhecimento de sua interface, mas ele tem conhecimento da interface do item adaptado..
+- Adaptador (???): É o adapatador de fato que implementa da interface de *Alvo*, porém, por trás, faz uso do item adaptado de forma totalmten transparente. As classes que usam esse adaptador só tem conhecimento de sua interface, mas ele tem conhecimento da interface do item adaptado.
