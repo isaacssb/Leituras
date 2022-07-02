@@ -1,5 +1,4 @@
 <?php
-
 namespace FactoryMethod\Product;
 
 class TeslasModeloS implements CarroProduct

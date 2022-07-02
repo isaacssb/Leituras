@@ -1,5 +1,4 @@
 <?php
-
 namespace FactoryMethod\Product;
 
 class DodgeCharger implements CarroProduct
