@@ -1,4 +1,5 @@
 <?php
+
 require_once('../autoloader.php');
 
 try {
@@ -17,20 +18,20 @@ try {
 echo $teslaModeloS->acelerar();
 echo $teslaModeloS->frear();
 echo $teslaModeloS->trocarMarcha();
-echo '\n';
+echo '<br />';
 
 echo $teslaModeloX->acelerar();
 echo $teslaModeloX->frear();
 echo $teslaModeloX->trocarMarcha();
-echo '\n';
+echo '<br />';
 
 echo $dodgeCharger->acelerar();
 echo $dodgeCharger->frear();
 echo $dodgeCharger->trocarMarcha();
-echo '\n';
+echo '<br />';
 
 echo $dodgeDart->acelerar();
 echo $dodgeDart->frear();
 echo $dodgeDart->trocarMarcha();
-echo '\n';
+echo '<br />';
 ?>
