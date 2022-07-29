@@ -1,13 +1,13 @@
-# Prototype
-Prototype é definido como um padrão de criação.\n
+# Facade
+Facade é definido como um padrão estrutural.
 <br />
-O prototype utilizar o próprio objeto para criar as novas instâncias em vez de usar classes auxiliares para fazer isso.\n
+O padrão Facade é utilizado para abstrair a complexidade e melhorar a implementação em outros projetos
 <br />
-O padrão prototype serve quando precisamos criar cópias exatas incluíndo os atributos. Tendo assim menos custo de memória ao invés de instancia.
+Como a tradução fala, ela é uma **fachada**, essa fachada trabalha em uma camada mais alta do código para  simplificar o uso de subsistemas.
 
 
-## Elementos que compõem o Prototype
+ ## Elementos que compõem o Facade
 
-- Protótipo (LivroPrototype.php): Uma classe abstrate que define a interface com os métodos que a permitem se autoclonar.
-- Protótipo Concreto (LivroPhpPrototype.php): Classe concreta que implementa a interface Prototype.
-- Cliente (Index.php): Classe responsável por criar os objetos de protótipo e clonálos por meio de seus métodos.
+- Facade (BibliotecaFacade.php): representação da fachada responsável por abstrair as classes de subsistemas. Geralmente, está camada é construída sobre uma única classe.
+- Classes de Subsistemas e módulos/biblioteca (ModuloApiSms.php, ModuloControleClientes.php, ModuloControleEstoque.php, ModuloEmail.php): são todas as classes das quais um **Facade** faz uso. São as classes que serão simplificadas.
+- Cliente (Index.php): Classe responsável por utilizar a fachada e utilizar como exemplo
