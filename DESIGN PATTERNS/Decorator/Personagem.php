@@ -13,6 +13,6 @@ abstract class Personagem
 
   public function getAtaque(): float
   {
-    return $this->ataque
+    return $this->ataque;
   }
 }

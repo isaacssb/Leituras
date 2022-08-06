@@ -1,7 +1,7 @@
 <?php
 namespace Decorator;
 
-class Arqueiro extends Personagem
+class Mago extends Personagem
 {
   public function __construct()
   {
