@@ -8,8 +8,8 @@ A vantagem desse padrão é que ele não viola o encapsulamento.
 
 
  ## Elementos que compõem o Memento
-- Originator
-- Memento
-- Care Taker
+- Originator(Texto.php): É o objeto cujo estado queremos capturar.
+- Memento(TextoMemento.php): É o objeto usado para armazenar o estado interno do originator.
+- Care Taker - Armazenador (TextoCareTaker.php): Responsável por armazenar e gerenciar os estados internos (Memento) de um originator.
 
 
