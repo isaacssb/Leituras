@@ -3,5 +3,5 @@ namespace Observer;
 
 interface Observer
 {
-  public function atualizado(string $codigo): void
+  public function atualizado(string $codigo): void;
 }
