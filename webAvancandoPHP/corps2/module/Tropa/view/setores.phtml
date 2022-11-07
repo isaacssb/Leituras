@@ -1,0 +1,8 @@
+<tr>
+    <td><?=$this->model->codigo?></td>
+    <td><?=$this->escapeHtml($this->model->nome)?></td>
+    <td>
+        <a href="<?=$this->placeholder('url')->edit . '/' . $this->model->codigo?>">Editar</a>
+        <button class="delete" url="<?=$this->placeholder('url')->edit . '/' . $this->model->codigo?>">Remover</button>
+    </td>
+</tr>

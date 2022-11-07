@@ -1,0 +1,48 @@
+<?php
+if ($this->pageCount):
+?>
+<div class="paginationControl">
+<?php
+    if (isset($this->previous)):
+?>
+  <a href="<?=$this->url($this->route, ['controller' => $this->controller, 'action' => 'index', 'key' => 0, 'page' => $this->previous]); ?>">
+    &lt; Anterior
+  </a> |
+<?php
+    else:
+?>
+  <span class="disabled">&lt; Anterior</span> |
+<?php
+    endif;
+?>
+
+<?php
+    foreach ($this->pagesInRange as $page):
+        if ($page != $this->current):
+?>
+    <a href="<?=$this->url($this->route, ['controller' => $this->controller, 'action' => 'index', 'key' => 0, 'page' => $page]); ?>">
+        <?=$page?>
+    </a> |
+<?php
+        else:
+            echo $page;
+?> |
+<?php
+        endif;
+    endforeach;
+    if (isset($this->next)):
+?>
+  <a href="<?=$this->url($this->route, ['controller' => $this->controller, 'action' => 'index', 'key' => 0, 'page' => $this->next]) ?>">
+    Próximo &gt;
+  </a>
+<?php
+    else:
+?>
+  <span class="disabled">Próximo &gt;</span>
+<?php
+    endif;
+?>
+</div>
+<?php
+endif;
+?>
